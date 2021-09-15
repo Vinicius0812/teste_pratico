@@ -1,4 +1,5 @@
 <?php
+session_start();
 include('conexao.php');
 
 if(empty($_POST['email']) || empty($_POST['senha'])) {
@@ -8,6 +9,7 @@ if(empty($_POST['email']) || empty($_POST['senha'])) {
 
 $email = mysqli_real_escape_string($conexao, $_POST['email']);
 $senha = mysqli_real_escape_string($conexao, $_POST['senha']);
+$nome = mysqli_real_escape_string($conexao, $_POST['nome']);
 
 $query = "SELECT id, nome FROM usuarios WHERE email = '{$email}' AND senha = md5('{$senha}')";
 
@@ -17,6 +19,7 @@ $row = mysqli_num_rows($result);
 
 if($row == 1){
     $_SESSION['email'] = $email;
+    $_SESSION['nome'] = $nome;
     header('Location: user_page.php');
     exit();
 }else{
