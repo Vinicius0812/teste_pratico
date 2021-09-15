@@ -16,7 +16,9 @@
         min-height: 560px;    
         margin: 100px auto;
         position: relative;  
-        background-color: #c0c6c8; 
+        background-color: #c0c6c8;  
+        padding: 20px;
+        border-radius: 4px;
     }
 
     h1{
@@ -32,12 +34,11 @@
     p{
         margin-bottom:1px;
         color: #660000;
-        text-align: left;
     }
     
     label{
         color: #405c60;
-        position: relative;
+        position: relative; 
     }
     
     input[type="submit"]{
@@ -49,8 +50,7 @@
         font-size: 20px;  
         border: 1px solid #fff;   
         margin-bottom: 10px;  
-        text-shadow: 0 1px 1px #333;
-        
+        border-color: #660000;
         -webkit-border-radius: 5px;
         border-radius: 5px;
         
@@ -59,6 +59,12 @@
 
     a{
         text-decoration: none;
+        border-radius: 4px;
+        width: 100%;
+        cursor: pointer;  
+        background: #fff;
+        padding: 8px 5px;
+        font-size: 20px;  
     }
     
     a.links{
@@ -66,15 +72,9 @@
     }
 
     a:link {
-        width: 100%;
-        cursor: pointer;  
-        background-color: #c0c6c8;;
-        padding: 8px 5px;
         color: #660000;
-        font-size: 20px;  
         border: 1px solid #660000;   
         margin-bottom: 10px;
-        
         transition: all 0.2s linear;
     }
 
@@ -87,7 +87,6 @@
         font-size: 20px;  
         border: 1px solid #660000;   
         margin-bottom: 10px;
-        
         transition: all 0.2s linear;
         text-align: center;
     }
@@ -101,8 +100,6 @@
         font-size: 20px;  
         border: 1px solid #fff;   
         margin-bottom: 10px;  
-        text-shadow: 0 1px 1px #333;
-        
         transition: all 0.2s linear;
     }
 
