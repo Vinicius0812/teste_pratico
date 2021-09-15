@@ -38,7 +38,7 @@
     
     label{
         color: #405c60;
-        position: relative;
+        position: relative; 
     }
     
     input[type="submit"]{
